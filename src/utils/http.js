@@ -1,6 +1,7 @@
 import axios from "axios";
 
 // 创建axios实例
+// axios就是一个网络请求管理员
 const http = axios.create({
   baseURL: "http://pcapi-xiaotuxian-front-devtest.itheima.net",
   timeout: 5000,
