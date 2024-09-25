@@ -1,7 +1,19 @@
 <template>
-  <div style="height: 1500px;">我是home</div>
+  <div class="container">
+    <HomeCategory></HomeCategory>
+    <HomeBanner></HomeBanner>
+  </div>
+  <HomeNew></HomeNew>
+  <HomeHot></HomeHot>
+  <HomeProduct></HomeProduct>
 </template>
 
-<script setup></script>
+<script setup>
+import HomeCategory from './components/HomeCategory.vue';
+import HomeBanner from './components/HomeBanner.vue';
+import HomeNew from './components/HomeNew.vue';
+import HomeHot from './components/HomeHot.vue';
+import HomeProduct from './components/HomeProduct.vue';
+</script>
 
 <style scoped></style>
