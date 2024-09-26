@@ -18,7 +18,7 @@ const router = createRouter({
         // 现在vuerouter的运行机制已经改了，“/空字符串”和“/”是等价的
 
         {
-          path: "home",
+          path: "",
           component: Home,  //http://localhost:5173/home访问到homecomponent, 父级组件也会出现
         },
         {

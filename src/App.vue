@@ -2,8 +2,7 @@
 
 <template>
   <header>
-    <el-button type="primary">按钮</el-button>
-    helloworld
+    <h1>我是APP.vue</h1>
   </header>
   <RouterView />
 </template>

@@ -19,7 +19,7 @@ console.log('hotList', hotList.value)//这一行其实是先执行的，那时ho
     <ul class="goods-list">
         <li v-for="item in hotList" :key="item.id">
             <router-link to="/">
-                <img v-img-lazy="item.picture":src="item.picture" alt="">
+                <img v-img-lazy="item.picture">
                 <p class="name">{{item.name}}</p>
                 <p class="desc">{{item.desc}}</p>
             </router-link>
