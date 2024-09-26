@@ -3,6 +3,7 @@ defineProps({
     good: {
         type: Object,
         default: () => {}
+        //props对象的常见属性有type, default, required, validators, asyncValidator, validator.知道你要传入的参数长啥样就可以生成代码
     }
 }
 )

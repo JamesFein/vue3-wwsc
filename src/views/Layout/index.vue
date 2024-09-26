@@ -2,6 +2,7 @@
   <LayoutFixed></LayoutFixed>
   <LayoutNav></LayoutNav>
   <LayoutHeader></LayoutHeader>
+  <!-- <RouterView :key="$route.path"></RouterView> -->
   <RouterView></RouterView>
   <LayoutFooter></LayoutFooter>
 </template>

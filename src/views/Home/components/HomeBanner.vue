@@ -5,9 +5,8 @@ import { onMounted } from "vue";
 const bannerList = ref([]);
 
 const getBanner = async () => {
-  const res = await getBannerAPI() //await意思是先暂停，等请求完成获得数据后再执行接下来的代码
-  bannerList.value = res.result
-  console.log('bannerList:', bannerList.value)
+  const res = await getBannerAPI('2');
+  bannerList.value = res.result;
 }
 
 onMounted(()=>getBanner());
