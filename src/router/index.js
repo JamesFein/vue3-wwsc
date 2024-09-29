@@ -22,7 +22,7 @@ const router = createRouter({
           component: Home,  //http://localhost:5173/home访问到homecomponent, 父级组件也会出现
         },
         {
-          path: "category/:id",//冒号表示“获取参数值”，id是参数名
+          path: "category/:id",//冒号表示“获取参数值”，id是参数名，要获取id就用route.params.id
           component: Category,
         },
       ],
