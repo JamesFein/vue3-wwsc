@@ -20,13 +20,13 @@
       </el-carousel>
   </div>
 
-  <!-- 分类产品图片 -->
+  <!-- 分类产品图片 显示产品的每一个分类 -->
   <div class="sub-list">
     <h3>全部分类</h3>
     <ul>
       <!-- categoryData是result的值,result.children是一个列表 -->
       <li v-for="i in categoryData.children" :key="i.id">
-        <router-link to="/">
+        <router-link :to="`/category/sub/${i.id}`">
           <img :src="i.picture" alt="">
           <p>{{ i.name }}</p>
         </router-link>
