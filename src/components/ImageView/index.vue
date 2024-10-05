@@ -19,9 +19,10 @@ defineProps({
 // 1.小图切换大图显示
 const activeIndex = ref(0)
 
-const enterHandler = (i) => {
-  //console.log(i)
-  activeIndex.value = i
+
+// 添加点击小图的处理函数
+const handleThumbnailClick = (index) => {
+  activeIndex.value = index
 }
 
 // 2. 获取鼠标相对位置
@@ -77,7 +78,10 @@ watch([elementX, elementY, isOutside], () => {
     </div>
     <!-- 小图列表 -->
     <ul class="small">
-      <li v-for="(img, i) in imageList" :key="i">
+      <li v-for="(img, i) in imageList" 
+          :key="i" 
+          @click="handleThumbnailClick(i)"
+          :class="{ active: i === activeIndex }">
         <img :src="img" alt="" />
       </li>
     </ul>
