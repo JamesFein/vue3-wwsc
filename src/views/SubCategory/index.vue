@@ -21,6 +21,7 @@
             <!-- load 是一个回调函数，当滚动到底部时，会触发该函数。回调就是代码先执行完了，再回头执行这个作为参数的函数 -->
             <!-- 商品列表 -->
             <GoodsItem v-for="good in goodsList" :good="good" :key="good.id"></GoodsItem>
+            <!-- 这里是goodsList，而不是goodList。英语有问题，前端好着急 -->
             
         </div>
     </div>
