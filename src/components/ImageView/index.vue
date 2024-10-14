@@ -4,8 +4,8 @@ import { useMouseInElement } from '@vueuse/core'
 // 图片列表
 defineProps({
   imageList:{
-    type:Array,
-    default:()=>[]
+    type:Array, //类型检查： type: Array 告诉 Vue 这个 prop 应该是一个数组。如果父组件传递了一个非数组值，Vue 会在控制台发出警告。
+    default:()=>[] //箭头函数，它返回一个空数组。
   }
 })
 // const imageList = [
