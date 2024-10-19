@@ -122,6 +122,7 @@
 import { getDetail } from '@/apis/detail';
 import { useRoute } from 'vue-router';
 import DetailHot from './components/DetailHot.vue';
+import Sku from '@/components/sku/index.vue';
 
 const goods = ref({}) //商品数据是一个单独的对象
 const route = useRoute() //使用useRoute()可以获取到当前路由的参数,例如id
