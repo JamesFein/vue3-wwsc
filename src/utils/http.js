@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useUserStore } from "@/stores/userStore";
-
+import { ElMessage } from 'element-plus';
+import router from '@/router';
 // 创建axios实例
 // axios就是一个网络请求管理员
 const http = axios.create({
