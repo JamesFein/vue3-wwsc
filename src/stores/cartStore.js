@@ -7,7 +7,7 @@ export const useCartStore = defineStore (
     'cart', 
     () => {
         const cartList = ref([]);
-        //当前代码的逻辑是，一旦登录之后，只会获取从服务器拉取回来的最新购物车列表，原来的购物车列表就清空了。
+        //当前这部分代码的逻辑是，一旦登录之后，只会获取从服务器拉取回来的最新购物车列表，原来的购物车列表就清空了，但是原来的购物车里面的项目会传到服务器里面和当前登录用户的购物车合并，最终变成一个新的购物车。
 
         const userStore = useUserStore();
         const isLogin = computed(() => userStore.userInfo.token);
