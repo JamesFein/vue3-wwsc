@@ -9,6 +9,10 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 // https://vitejs.dev/config/ 需要的时候查询vitejs官方的配置文档
 export default defineConfig({
+  server: {
+    host: '127.0.0.1',
+    port: 5173,
+  },
   plugins: [
     vue(),
     AutoImport({
