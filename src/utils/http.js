@@ -6,7 +6,7 @@ import router from '@/router';
 // axios就是一个网络请求管理员
 const http = axios.create({
   baseURL: "http://pcapi-xiaotuxian-front-devtest.itheima.net",
-  timeout: 5000,
+  timeout: 10000,
 });
 
 // axios请求拦截器
@@ -35,7 +35,7 @@ http.interceptors.response.use(
     })
     //401token失效处理
     const userStore = useUserStore();
-    if (e.response.status === 401){
+    if (e.response?.status === 401){
       userStore.clearUserInfo()
       router.push('/login')
     }

@@ -2,7 +2,6 @@
 
 <template>
   <header>
-    <h1>我是APP.vue</h1>
   </header>
   <RouterView />
 </template>

@@ -18,3 +18,13 @@ user是出现在请求的body中的对象
     "password": "hm#qd@23!"
 }
  */
+
+/**
+ * @description: 获取用户可能喜欢的商品列表
+ * @param {{ limit = 4 }}
+ * @return {*}
+ */
+
+export const getLikeListAPI = ( { limit = 4 } ) => {
+    return http.get('/goods/relevant', { params: { limit } });
+}
